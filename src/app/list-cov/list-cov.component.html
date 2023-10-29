@@ -1,0 +1,135 @@
+<div class="sidebar">
+    <div class="sidebar-header">
+      <a href="../" class="sidebar-logo">dashbyte</a>
+    </div><!-- sidebar-header -->
+    <div id="sidebarMenu" class="sidebar-body">
+      <div class="nav-group show">
+        <a href="#" class="nav-label">Dashboard</a>
+        <ul class="nav nav-sidebar">
+          
+          <li class="nav-item">
+            <a href="../dashboard/analytics.html" class="nav-link"><i class="ri-bar-chart-2-line"></i> <span>Website Analytics</span></a>
+          </li>
+         
+        </ul>
+      </div><!-- nav-group -->
+      <div class="nav-group show">
+        <a href="#" class="nav-label">Applications</a>
+        <ul class="nav nav-sidebar">
+          
+         
+          <li class="nav-item">
+            <a href="../apps/calendar.html" class="nav-link"><i class="ri-calendar-line"></i> <span>Calendar</span></a>
+          </li>
+        
+          <li class="nav-item">
+            <a href="../apps/tasks.html" class="nav-link"><i class="ri-checkbox-multiple-line"></i> <span> My Carpooling</span></a>
+          </li>
+          
+        </ul>
+      </div><!-- nav-group -->
+     
+    </div><!-- sidebar-body -->
+  
+  </div><!-- sidebar -->
+  
+  <div class="header-main px-3 px-lg-4">
+    <a id="menuSidebar" href="#" class="menu-link me-3 me-lg-4"><i class="ri-menu-2-fill"></i></a>
+  
+    <div class="form-search me-auto">
+      <input type="text" class="form-control" placeholder="Search">
+      <i class="ri-search-line"></i>
+    </div><!-- form-search -->
+  
+   
+    <div class="dropdown dropdown-profile ms-3 ms-xl-4">
+        <a href="" class="dropdown-link" data-bs-toggle="dropdown" data-bs-auto-close="outside"><div class="avatar online"><img src="https://via.placeholder.com/500/4c5366/fff" alt=""></div></a>
+        <div class="dropdown-menu dropdown-menu-end mt-10-f">
+          <div class="dropdown-menu-body">
+            <div class="avatar avatar-xl online mb-3"><img src="https://via.placeholder.com/500/4c5366/fff" alt=""></div>
+            <h5 class="mb-1 text-dark fw-semibold">Shaira Diaz</h5>
+            <p class="fs-sm text-secondary">Premium Member</p>
+  
+          
+            <hr>
+            <nav class="nav">
+              
+              <a href=""><i class="ri-user-settings-line"></i> Account Settings</a>
+              <a href=""><i class="ri-logout-box-r-line"></i> Log Out</a>
+            </nav>
+          </div><!-- dropdown-menu-body -->
+        </div><!-- dropdown-menu -->
+    </div><!-- dropdown -->
+  </div><!-- header-main -->
+  
+  <div class="main main-app p-3 p-lg-4">
+    <div class="d-flex align-items-center justify-content-between mb-4">
+      <div>
+        <ol class="breadcrumb fs-sm mb-1">
+          <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+          <li class="breadcrumb-item active" aria-current="page">My Carpoolings</li>
+        </ol>
+        <h4 class="main-title mb-0">My Carpoolings</h4>
+      </div>
+  
+    
+    </div>
+  
+    <div class="row g-3">
+        <table class="table-light" style=" border: 2px solid black; /* Définir l'épaisseur et le style de la bordure */
+        border-collapse: collapse; /* Pour fusionner les bordures des cellules adjacentes */
+        width: 100%; /* Ajustez la largeur de la table selon vos besoins */
+    ">
+            <thead >
+                <tr style="  th {
+                    background-color: #f2f2f2;
+                }tr:hover {
+        background-color: #a3a3a3; /* Change background color on hover */
+    }">
+                    
+                    <th>Départ</th>
+                    <th>Destination</th>
+                    <th>Description</th>
+                    <th>Bagage</th>
+                    <th>Téléphone</th>
+                    <th>Prix</th>
+                    <th>Place</th>
+                    <th>Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+        
+            <tbody *ngFor="let Prod of covs " >
+                <tr>
+                    
+                    <td>{{ Prod.depart }}</td>
+                    <td>{{ Prod.destination }}</td>
+                    <td>{{ Prod.description }}</td>
+                    <td>{{ Prod.bagage }}</td>
+                    <td>{{ Prod.phone }}</td>
+                    <td>{{ Prod.price }}</td>
+                    <td>{{ Prod.place }}</td>
+                    <td>{{ Prod.date }}</td>
+                    <td class="action-buttons">
+                        <button class="btn btn-primary" (click)="updateCovoiturage(Prod.id)">Edit</button> 
+                        <button class="btn btn-danger" (click)="deleteCovoiturage(Prod.id)">Delete</button>
+                    </td>
+                    
+                    
+                </tr>
+                <!-- Ajoutez d'autres lignes de données ici -->
+            </tbody>
+        </table>
+          
+   
+    </div><!-- row -->
+
+ 
+  
+    <div class="main-footer mt-5">
+      <span>&copy; 2023. Dashbyte. All Rights Reserved.</span>
+      <span>Created by: <a href="http://themepixels.me" target="_blank">Themepixels</a></span>
+    </div><!-- main-footer -->
+  </div><!-- main -->
+  
+                <div class="chart-bar-one"><canvas id="chartBar1"></canvas></div>
