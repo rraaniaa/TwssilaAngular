@@ -10,12 +10,16 @@ import { ReactiveFormsModule } from '@angular/forms'; //
 import { DashComponent } from './dist/dash/dash.component';
 import { AcceuilComponent } from './acceuil/acceuil.component';
 import { ListCovComponent } from './list-cov/list-cov.component';
+import { CreateCovComponent } from './create-cov/create-cov.component';
+import { UpdateCovComponent } from './update-cov/update-cov.component';
 @NgModule({
   declarations: [
     AppComponent,
     DashComponent,
     AcceuilComponent,
-    ListCovComponent
+    ListCovComponent,
+    CreateCovComponent,
+    UpdateCovComponent
   ],
   imports: [
     BrowserModule,

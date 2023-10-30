@@ -79,49 +79,53 @@
     
     </div>
   
-    <div class="row g-3">
-        <table class="table-light" >
-            <thead >
-                <tr>
-                    
-                    <th>Départ</th>
-                    <th>Destination</th>
-                    <th>Description</th>
-                    <th>Bagage</th>
-                    <th>Téléphone</th>
-                    <th>Prix</th>
-                    <th>Place</th>
-                    <th>Date</th>
-                    <th>Actions</th>
-                </tr>
-            </thead> <br>
+    <div class="card card-settings">
         
-            <tbody class="table-group-divider" *ngFor="let Prod of covs " >
-                <tr>
-                    
-                    <td>{{ Prod.depart }}</td>
-                    <td>{{ Prod.destination }}</td>
-                    <td>{{ Prod.description }}</td>
-                    <td>{{ Prod.bagage }}</td>
-                    <td>{{ Prod.phone }}</td>
-                    <td>{{ Prod.price }}</td>
-                    <td>{{ Prod.place }}</td>
-                    <td>{{ Prod.date }}</td>
-                    <td class="action-buttons">
-                        <button class="btn btn-primary" (click)="updateCovoiturage(Prod.id)">Update</button> 
-                        <button style="margin-left: 7%;" class="btn btn-danger" (click)="deleteCovoiturage(Prod.id)">Delete</button>
-                    </td>
-                    
-                    
-                </tr>
-                <!-- Ajoutez d'autres lignes de données ici -->
-            </tbody>
-        </table>
-          
-   
-    </div><!-- row -->
-
- 
+        <div class="card-body p-0">
+            <div class="card">
+                <div class="card-header">
+                  <h5 class="card-title">Update Covoiturage</h5>
+                </div>
+                <div class="card-body">
+                  <form (ngSubmit)="onSubmit()">
+                    <div class="mb-3">
+                      <label for="depart" class="form-label">Depart</label>
+                      <input type="text" [(ngModel)]="cov.depart" class="form-control" id="depart" name="depart">
+                    </div>
+                    <div class="mb-3">
+                      <label for="destination" class="form-label">Destination</label>
+                      <input type="text" [(ngModel)]="cov.destination" class="form-control" id="destination" name="destination">
+                    </div>
+                    <div class="mb-3">
+                      <label for="description" class="form-label">Description</label>
+                      <input type="text" [(ngModel)]="cov.description" class="form-control" id="description" name="description">
+                    </div>
+                    <div class="mb-3">
+                      <label for="phone" class="form-label">Phone</label>
+                      <input type="text" [(ngModel)]="cov.phone" class="form-control" id="phone" name="phone">
+                    </div>
+                    <div class="mb-3">
+                      <label for="bagage" class="form-label">Bagage</label>
+                      <input type="text" [(ngModel)]="cov.bagage" class="form-control" id="bagage" name="bagage">
+                    </div>
+                    <div class="mb-3">
+                      <label for="date" class="form-label">Date</label>
+                      <input type="text" [(ngModel)]="cov.date" class="form-control" id="date" name="date">
+                    </div>
+                    <div class="mb-3">
+                      <label for="place" class="form-label">Place</label>
+                      <input type="text" [(ngModel)]="cov.place" class="form-control" id="place" name="place">
+                    </div>
+                    <div class="mb-3">
+                      <label for="price" class="form-label">Price</label>
+                      <input type="text" [(ngModel)]="cov.price" class="form-control" id="price" name="price">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Update</button>
+                  </form>
+                </div>
+              </div>
+              
+      </div>
   
     <div class="main-footer mt-5">
       <span>&copy; 2023. Dashbyte. All Rights Reserved.</span>

@@ -26,7 +26,7 @@ export class ListCovComponent implements OnInit {
   }
 
   updateCovoiturage(id: number) {
-    this.router.navigate(['update-cov', id]);
+    this.router.navigate(['Update-cov', id]);
   }
 
   deleteCovoiturage(id: number) {
