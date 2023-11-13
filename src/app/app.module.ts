@@ -7,11 +7,11 @@ import { FormsModule} from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms'; // 
 
 
-import { DashComponent } from './dist/dash/dash.component';
+import { DashComponent } from './driver_dash/dash/dash.component';
 import { AcceuilComponent } from './acceuil/acceuil.component';
-import { ListCovComponent } from './list-cov/list-cov.component';
-import { CreateCovComponent } from './create-cov/create-cov.component';
-import { UpdateCovComponent } from './update-cov/update-cov.component';
+import { ListCovComponent } from './driver_dash/list-cov/list-cov.component';
+import { CreateCovComponent } from './driver_dash/create-cov/create-cov.component';
+import { UpdateCovComponent } from './driver_dash/update-cov/update-cov.component';
 @NgModule({
   declarations: [
     AppComponent,

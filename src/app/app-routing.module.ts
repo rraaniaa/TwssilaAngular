@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { DashComponent } from './dist/dash/dash.component';
+import { DashComponent } from './driver_dash/dash/dash.component';
 import { AcceuilComponent } from './acceuil/acceuil.component';
-import { ListCovComponent } from './list-cov/list-cov.component';
-import { CreateCovComponent } from './create-cov/create-cov.component';
-import { UpdateCovComponent } from './update-cov/update-cov.component';
+import { ListCovComponent } from './driver_dash/list-cov/list-cov.component';
+import { CreateCovComponent } from './driver_dash/create-cov/create-cov.component';
+import { UpdateCovComponent } from './driver_dash/update-cov/update-cov.component';
 
 const routes: Routes = [
     {path:'dash',component:DashComponent},

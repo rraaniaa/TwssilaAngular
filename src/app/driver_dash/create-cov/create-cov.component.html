@@ -164,6 +164,23 @@
               <div style="margin-left: 80%;" *ngIf="prodForm.get('phone')?.invalid && (prodForm.get('phone')?.dirty || prodForm.get('phone')?.touched)" class="text-warning">
                 <ng-container *ngIf="prodForm.get('phone')?.hasError('required')">Phone is required.</ng-container>
               </div>
+
+              <div class="setting-item">
+                <div class="row g-2">
+                  <div class="col-md-5">
+                    <h6>Marque</h6>
+                  </div>
+                  <div class="col-md">
+                    <label for="marque">Marque</label>
+                    <input type="text" class="form-control" id="marque" name="marque" formControlName="marque">
+                  </div>
+                </div>
+              </div>
+              <!-- Display error messages for the "marque" field -->
+              <div style="margin-left: 80%;" *ngIf="prodForm.get('marque')?.invalid && (prodForm.get('marque')?.dirty || prodForm.get('marque')?.touched)" class="text-warning">
+                <ng-container *ngIf="prodForm.get('marque')?.hasError('required')">marque is required.</ng-container>
+              </div>
+
               
               <div class="setting-item">
                 <div class="row g-2">

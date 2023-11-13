@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { CovoiturageService } from '../covoiturage.service';
+import { CovoiturageService } from '../../covoiturage.service';
 import { Router } from '@angular/router';
-import { cov } from '../cov';
+import { cov } from '../../cov';
 
 @Component({
   selector: 'app-list-cov',

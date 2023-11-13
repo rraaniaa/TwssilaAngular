@@ -1,6 +1,6 @@
 import { Component,OnInit } from '@angular/core';
-import { cov } from '../cov';
-import { CovoiturageService } from '../covoiturage.service';
+import { cov } from '../../cov';
+import { CovoiturageService } from '../../covoiturage.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms'; 
 
