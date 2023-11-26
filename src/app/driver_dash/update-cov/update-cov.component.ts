@@ -24,7 +24,6 @@ export class UpdateCovComponent implements OnInit {
       this.prodForm = this.formBuilder.group({
         ok: ['', Validators.required], 
         prix: ['', [Validators.required, Validators.min(1)]], 
-        quantite: ['', [Validators.required, Validators.min(0), Validators.max(1000)]], 
       });
      }
 

@@ -10,5 +10,8 @@ export class cov {
     price!: number;
     place!: number;
     date!:Date;
+    totalReservations!:number;
+  reservations: any;
+  count: any | undefined;
 }
 //marque  

@@ -1,6 +1,6 @@
 <div class="sidebar">
     <div class="sidebar-header">
-      <a href="../" class="sidebar-logo">dashbyte</a>
+      <a href="../" class="sidebar-logo">Wassalni</a>
     </div><!-- sidebar-header -->
     <div id="sidebarMenu" class="sidebar-body">
       <div class="nav-group show">
@@ -8,7 +8,7 @@
         <ul class="nav nav-sidebar">
           
           <li class="nav-item">
-            <a href="../dashboard/analytics.html" class="nav-link"><i class="ri-bar-chart-2-line"></i> <span>Website Analytics</span></a>
+            <a routerLink="/dash" class="nav-link"><i class="ri-bar-chart-2-line"></i> <span>Website Analytics</span></a>
           </li>
          
         </ul>
@@ -154,17 +154,17 @@
       <div class="col-6 col-xl-3">
         <div class="card card-one">
           <div class="card-body">
-            <label class="card-title fs-sm fw-medium mb-1">Unique Purchases</label>
-            <h3 class="card-value mb-1"><i class="ri-shopping-bag-3-line"></i> 8,327</h3>
-            <small><span class="d-inline-flex text-danger">0.7% <i class="ri-arrow-down-line"></i></span> than last week</small>
+            <label class="card-title fs-sm fw-medium mb-1">ALL Carpoolings</label>
+            <h3 class="card-value mb-1"><i class="ri-shopping-bag-3-line"></i> {{ok}}</h3>
+            <small><span class="d-inline-flex text-success">0.7% <i class="ri-arrow-up-line"></i></span> than last week</small>
           </div><!-- card-body -->
         </div><!-- card-one -->
       </div><!-- col -->
       <div class="col-6 col-xl-3">
         <div class="card card-one">
           <div class="card-body">
-            <label class="card-title fs-sm fw-medium mb-1">Order Value</label>
-            <h3 class="card-value mb-1"><i class="ri-briefcase-4-line"></i> <span>$</span>12,105</h3>
+            <label class="card-title fs-sm fw-medium mb-1">Total Accepted Reservations</label>
+            <h3 class="card-value mb-1"><i class="ri-briefcase-4-line"></i> <span></span>{{ok2}}</h3>
             <small><span class="d-inline-flex text-success">2.1% <i class="ri-arrow-up-line"></i></span> than last week</small>
           </div><!-- card-body -->
         </div><!-- card-one -->
@@ -172,8 +172,8 @@
       <div class="col-6 col-xl-3">
         <div class="card card-one">
           <div class="card-body">
-            <label class="card-title fs-sm fw-medium mb-1">Order Quantity</label>
-            <h3 class="card-value mb-1"><i class="ri-inbox-line"></i> 4,598</h3>
+            <label class="card-title fs-sm fw-medium mb-1">Total Canceled Reservations</label>
+            <h3 class="card-value mb-1"><i class="ri-inbox-line"></i> {{ok3}}</h3>
             <small><span class="d-inline-flex text-danger">0.3% <i class="ri-arrow-down-line"></i></span> than last week</small>
           </div><!-- card-body -->
         </div><!-- card-one -->
@@ -351,8 +351,8 @@
  
   
     <div class="main-footer mt-5">
-      <span>&copy; 2023. Dashbyte. All Rights Reserved.</span>
-      <span>Created by: <a href="http://themepixels.me" target="_blank">Themepixels</a></span>
+      <span>&copy; 2023. Dashboard. Driver.</span>
+      <span>Created by: <a  target="_blank">DevGenuis</a></span>
     </div><!-- main-footer -->
   </div><!-- main -->
   

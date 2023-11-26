@@ -87,38 +87,42 @@
                   <h5 class="card-title">Update Covoiturage</h5>
                 </div>
                 <div class="card-body">
-                  <form (ngSubmit)="onSubmit()">
+                  <form  (ngSubmit)="onSubmit()">
                     <div class="mb-3">
                       <label for="depart" class="form-label">Depart</label>
-                      <input type="text" [(ngModel)]="cov.depart" class="form-control" id="depart" name="depart">
+                      <input type="text" [(ngModel)]="cov.depart" placeholder="{{ cov.depart }}" class="form-control" id="depart" name="depart">
                     </div>
                     <div class="mb-3">
                       <label for="destination" class="form-label">Destination</label>
-                      <input type="text" [(ngModel)]="cov.destination" class="form-control" id="destination" name="destination">
+                      <input type="text" [(ngModel)]="cov.destination" placeholder="{{ cov.destination }}" class="form-control" id="destination" name="destination">
                     </div>
                     <div class="mb-3">
                       <label for="description" class="form-label">Description</label>
-                      <input type="text" [(ngModel)]="cov.description" class="form-control" id="description" name="description">
+                      <input type="text" [(ngModel)]="cov.description" placeholder="{{ cov.description }}" class="form-control" id="description" name="description">
                     </div>
                     <div class="mb-3">
                       <label for="phone" class="form-label">Phone</label>
-                      <input type="text" [(ngModel)]="cov.phone" class="form-control" id="phone" name="phone">
+                      <input type="text" [(ngModel)]="cov.phone" placeholder="{{ cov.phone }}" class="form-control" id="phone" name="phone">
                     </div>
                     <div class="mb-3">
                       <label for="bagage" class="form-label">Bagage</label>
-                      <input type="text" [(ngModel)]="cov.bagage" class="form-control" id="bagage" name="bagage">
+                      <input type="text" [(ngModel)]="cov.bagage" placeholder="{{ cov.bagage }}" class="form-control" id="bagage" name="bagage">
+                    </div>
+                    <div class="mb-3">
+                      <label for="bagage" class="form-label">Marque</label>
+                      <input type="text" [(ngModel)]="cov.marque" placeholder="{{ cov.marque }}" class="form-control" id="marque" name="marque">
                     </div>
                     <div class="mb-3">
                       <label for="date" class="form-label">Date</label>
-                      <input type="text" [(ngModel)]="cov.date" class="form-control" id="date" name="date">
+                      <input type="date" [(ngModel)]="cov.date" placeholder="{{ cov.date }}" class="form-control" id="date" name="date">
                     </div>
                     <div class="mb-3">
                       <label for="place" class="form-label">Place</label>
-                      <input type="text" [(ngModel)]="cov.place" class="form-control" id="place" name="place">
+                      <input type="text" [(ngModel)]="cov.place" placeholder="{{ cov.place }}" class="form-control" id="place" name="place">
                     </div>
                     <div class="mb-3">
                       <label for="price" class="form-label">Price</label>
-                      <input type="text" [(ngModel)]="cov.price" class="form-control" id="price" name="price">
+                      <input type="text" [(ngModel)]="cov.price" placeholder="{{ cov.price }}" class="form-control" id="price" name="price">
                     </div>
                     <button type="submit" class="btn btn-primary">Update</button>
                   </form>
@@ -128,8 +132,8 @@
       </div>
   
     <div class="main-footer mt-5">
-      <span>&copy; 2023. Dashbyte. All Rights Reserved.</span>
-      <span>Created by: <a href="http://themepixels.me" target="_blank">Themepixels</a></span>
+      <span>&copy; 2023. Dashboard. Driver.</span>
+      <span>Created by: <a  target="_blank">DevGenuis</a></span>
     </div><!-- main-footer -->
   </div><!-- main -->
   
